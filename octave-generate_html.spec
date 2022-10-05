@@ -2,9 +2,9 @@
 
 Summary:	Generating HTML help pages for Octave packages
 Name:		octave-%{octpkg}
-Version:	0.3.2
+Version:	0.3.3
 Release:	1
-Source0:	http://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+
 Group:		Sciences/Mathematics
 Url:		https://octave.sourceforge.io/%{octpkg}/
