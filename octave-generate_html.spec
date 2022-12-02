@@ -7,7 +7,7 @@ Release:	1
 Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+
 Group:		Sciences/Mathematics
-Url:		https://octave.sourceforge.io/%{octpkg}/
+Url:		https://packages.octave.org/%{octpkg}/
 BuildArch:	noarch
 
 BuildRequires:	octave-devel >= 3.2.0
@@ -22,8 +22,6 @@ This package provides functions for generating HTML pages that contain the
 help texts for a set of functions. The package is designed to be as general
 as possible, but also contains convenience functions for generating a set
 of pages for entire packages.
-
-This package is part of community Octave-Forge collection.
 
 %files
 %license COPYING
