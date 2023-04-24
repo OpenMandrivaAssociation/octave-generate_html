@@ -1,21 +1,22 @@
 %global octpkg generate_html
 
 Summary:	Generating HTML help pages for Octave packages
-Name:		octave-%{octpkg}
+Name:		octave-generate_html
 Version:	0.3.3
-Release:	1
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Release:	2
 License:	GPLv3+
 Group:		Sciences/Mathematics
-Url:		https://packages.octave.org/%{octpkg}/
-BuildArch:	noarch
+Url:		https://packages.octave.org/generate_html/
+Source0:	https://downloads.sourceforge.net/octave/generate_html-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 3.2.0
+BuildRequires:  octave-devel >= 3.2.0
 
 Requires:	octave(api) = %{octave_api}
 
 Requires(post): octave
 Requires(postun): octave
+
+BuildArch:	noarch
 
 %description
 This package provides functions for generating HTML pages that contain the
@@ -33,9 +34,6 @@ of pages for entire packages.
 
 %prep
 %autosetup -p1 -n %{octpkg}-%{version}
-
-# remove backup files
-#find . -name \*~ -delete
 
 %build
 %octave_pkg_build
