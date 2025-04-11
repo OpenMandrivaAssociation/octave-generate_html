@@ -3,7 +3,7 @@
 Summary:	Generating HTML help pages for Octave packages
 Name:		octave-generate_html
 Version:	0.3.3
-Release:	2
+Release:	3
 License:	GPLv3+
 Group:		Sciences/Mathematics
 Url:		https://packages.octave.org/generate_html/
